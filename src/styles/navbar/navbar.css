@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* $background-color: #ffffff;
+$primary-color: #ff6600;
+$secondary-color: #009975;
+$text-color: #000000a8;
+// Variáveis de cor (ajuste conforme seu projeto)
+$background-color: #fff;
+$primary-color: #ff6600;
+$text-color: #222;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+  background: $background-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  min-height: 64px;
+}
+
+.NavBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.NavBarLeftLogo img {
+  height: 32px;
+  display: block;
+}
+
+.NavBarLeft a {
+  font-family: "Satoshi", Arial, sans-serif;
+  font-weight: 500;
+  color: $text-color;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 18px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.NavBarLeft a:hover {
+  color: #fff;
+  background: $primary-color;
+}
+.NavBarLeft .active-link {
+  background: $primary-color;
+  color: #fff !important;
+}
+
+.NavBarCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBarCenterSearch {
+  width: 100%;
+  max-width: 320px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: $text-color;
+}
+
+.NavBarRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.NavBarRighticon,
+.NavBarRight__icon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.NavBarRight .active-link {
+  background: $primary-color;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+    &links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+      }
+      a {
+        font-family: "Satoshi", Arial, sans-serif;
+        font-weight: 500;
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 6px 18px;
+        border-radius: 6px;
+        transition: color 0.2s, background 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        &:hover {
+          color: #fff;
+          background: $primary-color;
+        }
+      }
+      .active-link {
+        background: $primary-color;
+        color: #fff !important;
+      }
+    }
+
+    &center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &search {
+      width: 100%;
+      max-width: 320px;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #fff;
+      color: $text-color;
+    }
+
+    &right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &icon {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+  }
+}
+ */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  min-height: 64px;
+}
+.navbarleft {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbarlogo {
+  display: flex;
+  align-items: center;
+}
+.navbarlogo img {
+  height: 32px;
+  display: block;
+}
+.navbarlinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbarlinks li {
+  display: flex;
+  align-items: center;
+}
+.navbarlinks li a {
+  font-family: "Satoshi", Arial, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6588235294);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 18px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.navbarlinks li a:hover {
+  color: #fff;
+  background: #ff6600;
+}
+.navbarcenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarsearch {
+  width: 100%;
+  max-width: 320px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.6588235294);
+}
+.navbarright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbaricon {
+  height: 20px;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+}/*# sourceMappingURL=navbar.css.map */
