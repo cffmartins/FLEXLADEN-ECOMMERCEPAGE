@@ -26,6 +26,8 @@ import NavBar from "./components/NavBar";
 import SliderComponent from "./components/SliderComponent";
 //top selling import
 import TopSelling from "./components/TopSelling";
+//comments section import
+import CommentsSection from "./components/CommentsSection";
 
 // rendering the app
 createRoot(document.getElementById("root")).render(
