@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // importing API context
 import ApiProvider from "./context/ApiProvider";
@@ -22,14 +22,17 @@ import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
 //navbar import
 import NavBar from "./components/NavBar";
-import Slider from "./components/SliderComponent";
+//slider import
+import SliderComponent from "./components/SliderComponent";
+//top selling import
+import TopSelling from "./components/TopSelling";
 
+// rendering the app
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ApiProvider>
       <BrowserRouter>
         <NavBar />
-        <Slider />
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/categorypage" element={<CategoryPage />} />

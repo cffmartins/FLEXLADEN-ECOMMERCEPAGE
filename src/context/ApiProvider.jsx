@@ -24,3 +24,5 @@ const ApiProvider = ({ children }) => {
 };
 
 export default ApiProvider;
+
+// ApiProvider component to fetch data and provide it via context

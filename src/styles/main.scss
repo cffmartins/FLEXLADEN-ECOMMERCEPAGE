@@ -1,4 +1,6 @@
 @use "./slider/slider";
+@use "./button/button";
+@use "../colors/colors" as *;
 
 @font-face {
   font-family: "Satoshi";
