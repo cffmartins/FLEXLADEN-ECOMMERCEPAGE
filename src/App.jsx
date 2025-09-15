@@ -10,6 +10,7 @@ import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
+import { useEffect, useState } from "react";
 
 function App() {
   const [favoriteIds, setFavoriteIds] = useState(() => {

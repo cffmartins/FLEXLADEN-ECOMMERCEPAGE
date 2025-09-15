@@ -9,7 +9,7 @@ function HomePage({ favoriteIds, toggleFavorite }) {
     <>
       <div>
         <Slider />
-        <TopSelling />
+        <TopSelling favoriteIds={favoriteIds} toggleFavorite={toggleFavorite} />
       </div>
     </>
   );
