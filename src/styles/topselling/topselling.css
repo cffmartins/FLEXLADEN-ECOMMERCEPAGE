@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(204, 81.6, 0);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.5);
+}
+.btn:disabled {
+  background-color: rgb(255, 163.2, 102);
+  cursor: not-allowed;
+}
+
+.topselling-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  gap: 24px;
+  width: 100%;
+}
+
+.grid-4-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: start;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+.product-card-wrapper {
+  background-color: #f0eeed;
+  flex: 0 0 calc(25% - 15px);
+  min-width: 200px;
+}
+
+/*
+.grid-4-row {
+  display: flex;
+  flex-wrap: nowrap; // Mantém 4 itens numa linha, sem quebrar para próxima linha
+  gap: 20px; // Espaço entre os produtos
+  justify-content: start; // Alinha os produtos à esquerda (pode ser center ou space-between)
+  width: 100%;
+  overflow-x: auto; // Permite scroll horizontal se não couber na tela
+  padding: 0 10px;
+}
+
+.grid-4-row > * {
+  flex: 0 0 calc(25% - 15px); // Cada item ocupa cerca de 25% da largura menos o gap
+  min-width: 200px; // Tamanho mínimo para mantê-los legíveis
+}
+
+.view-all-btn {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.topselling-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+.topselling-header h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $text-color;
+  margin: 0;
+}
+.topselling-header p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $text-color;
+  margin: 0;
+  max-width: 600px;
+}
+.topselling-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.topselling-button {
+  margin-top: 16px;
+}
+.topselling-button button {
+  @include button-style($primary-color, #fff);
+}
+.topselling-button button:hover {
+  @include button-style(darken($primary-color, 10%), #fff);
+}
+.topselling-button button:active {
+  @include button-style(darken($primary-color, 15%), #fff);
+}
+.topselling-button button:disabled {
+  @include button-style($disabled-color, #fff);
+  cursor: not-allowed;
+}
+*//*# sourceMappingURL=topselling.css.map */
