@@ -1,18 +1,21 @@
-// importing styles
 import "../styles/main.css";
-// importing components
 import Navbar from "../components/NavBar.jsx";
 import Slider from "../components/SliderComponent.jsx";
 import TopSelling from "../components/TopSelling.jsx";
 
-function HomePage() {
+function HomePage({ favoriteIds, toggleFavorite }) {
   return (
     <>
       <div>
-        <Slider />
-        <TopSelling />
+        <Slider /> {/* Sem favoritos */}
+        <TopSelling
+          favoriteIds={favoriteIds}
+          toggleFavorite={toggleFavorite}
+        />{" "}
+        {/* Com favoritos */}
       </div>
     </>
   );
 }
+
 export default HomePage;

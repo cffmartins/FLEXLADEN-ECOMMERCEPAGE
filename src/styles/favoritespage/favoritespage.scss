@@ -1,0 +1,108 @@
+// Styles for FavoritesPage
+@use "../colors/colors" as *;
+@import "../button/button.scss";
+
+// Container for the entire page
+.product-area {
+  flex: 1;
+  padding: 20px 20px;
+  background: $background-color;
+  overflow-y: auto;
+
+  &__title {
+    font-family: "Satoshi", Arial, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+    color: $secondary-color;
+    letter-spacing: 0.01em;
+  }
+}
+
+p {
+  font-family: "Satoshi", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: $text-color;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.grid-4-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 10px;
+}
+
+.product-card-wrapper {
+  flex: 0 0 calc(25% - 15px); // 4 produtos por linha
+  min-width: 150px;
+
+  h3 {
+    font-family: "Satoshi", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: $text-color;
+  }
+
+  p {
+    font-family: "Satoshi", Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e67e22;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: $background-card;
+    min-width: unset;
+  }
+}
+
+// responsive mobile
+@media (max-width: 700px) {
+  .product-area {
+    width: 100vw;
+    padding: 18px 6px;
+  }
+
+  .grid-4-row {
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .product-card-wrapper {
+    flex: 0 0 48%;
+    min-width: unset;
+
+    img {
+      min-width: 100%;
+      border-radius: 6px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+      margin: 8px 0 4px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #e67e22;
+      text-align: center;
+      margin: 0 0 12px;
+    }
+  }
+}

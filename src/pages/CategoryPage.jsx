@@ -28,7 +28,7 @@ const categoryFamilies = {
 };
 
 // Main CategoryPage component
-function CategoryPage() {
+function CategoryPage({ favoriteIds, toggleFavorite }) {
   const [categories, setCategories] = useState([]);
   const [openFamilies, setOpenFamilies] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -125,7 +125,12 @@ function CategoryPage() {
                 onClick={() => goToProductPage(product.id)}
                 style={{ cursor: "pointer" }}
               >
-                <ProductCard product={product} variant="simple" />
+                <ProductCard
+                  product={product}
+                  variant="simple"
+                  favoriteIds={favoriteIds}
+                  toggleFavorite={toggleFavorite}
+                />
               </div>
             ))}
           </div>

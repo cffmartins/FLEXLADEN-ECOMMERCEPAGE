@@ -10,7 +10,7 @@ import Button from "./Button";
 import "../styles/topselling/topselling.scss";
 import "../styles/button/button.scss";
 
-const TopSelling = () => {
+const TopSelling = ({ favoriteIds, toggleFavorite }) => {
   const { data, loading } = useContext(ApiContext);
   const navigate = useNavigate();
 
@@ -29,7 +29,12 @@ const TopSelling = () => {
       <div className="grid-4-row">
         {productsToShow.map((product) => (
           <div key={product.id} className="product-card-wrapper">
-            <ProductCard product={product} variant="simple" />
+            <ProductCard
+              product={product}
+              variant="simple"
+              favoriteIds={favoriteIds}
+              toggleFavorite={toggleFavorite}
+            />
           </div>
         ))}
       </div>
