@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import necessary hooks
 import ApiProvider from "./context/ApiProvider";
 // import components and pages
+import ScrollToTop from "./components/ScrollToTop";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
@@ -33,6 +34,7 @@ function App() {
   return (
     <ApiProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route
@@ -72,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/productpage/:id"
+            path="/productpage/:productId"
             element={
               <ProductPage
                 favoriteIds={favoriteIds}

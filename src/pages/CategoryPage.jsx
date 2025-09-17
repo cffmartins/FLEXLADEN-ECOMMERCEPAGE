@@ -1,5 +1,5 @@
+// importing React and necessary hooks
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 //importing components
 import ProductCard from "../components/ProductCard";
 import Button from "../components/Button";
@@ -33,7 +33,6 @@ function CategoryPage({ favoriteIds, toggleFavorite }) {
   const [openFamilies, setOpenFamilies] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://dummyjson.com/products/category-list")
@@ -64,10 +63,6 @@ function CategoryPage({ favoriteIds, toggleFavorite }) {
 
   const handleSelectCategory = (cat) => {
     setSelectedCategory(cat);
-  };
-
-  const goToProductPage = (productId) => {
-    navigate(`/product/${productId}`);
   };
 
   return (
@@ -119,17 +114,13 @@ function CategoryPage({ favoriteIds, toggleFavorite }) {
         {products.length > 0 ? (
           <div className="grid-4-row">
             {products.map((product) => (
-              <div
-                key={product.id}
-                className="product-card-wrapper"
-                onClick={() => goToProductPage(product.id)}
-                style={{ cursor: "pointer" }}
-              >
+              <div key={product.id} className="product-card-wrapper">
                 <ProductCard
                   product={product}
                   variant="simple"
                   favoriteIds={favoriteIds}
                   toggleFavorite={toggleFavorite}
+                  enableNavigation={true}
                 />
               </div>
             ))}

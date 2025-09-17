@@ -9,7 +9,7 @@ function CommentsSection() {
   const [comments, setComments] = useState([]);
   const [likedIds, setLikedIds] = useState(new Set());
 
-  // Fetch comments
+  // fetch comments
   useEffect(() => {
     fetch("https://dummyjson.com/comments")
       .then((res) => res.json())
@@ -22,7 +22,7 @@ function CommentsSection() {
       .catch((error) => console.error("Error loading comments:", error));
   }, []);
 
-  // Toggle like status
+  // toggle like status
   function toggleLike(id) {
     setLikedIds((prev) => {
       const newSet = new Set(prev);
