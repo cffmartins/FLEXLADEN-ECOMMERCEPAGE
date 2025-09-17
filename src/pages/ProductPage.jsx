@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import ProductCard from "../components/ProductCard";
 // importing styles
-import "../styles/productpage/ProductPage.scss";
+import "../styles/productpage/productpage.scss";
 // importing toast notification
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
