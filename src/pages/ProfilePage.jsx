@@ -36,7 +36,7 @@ function ProfilePage() {
 
   return (
     <div className="profile-page">
-      <h2 className="profile-page__title">My account</h2>
+      <h2 className="profile-page__title">MY ACCOUNT</h2>
 
       {!userData ? (
         <form className="profile-page__form" onSubmit={handleLogin}>

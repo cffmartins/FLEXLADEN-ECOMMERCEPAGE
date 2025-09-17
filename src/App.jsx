@@ -1,17 +1,18 @@
 // import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 // import necessary hooks
 import ApiProvider from "./context/ApiProvider";
 // import components and pages
 import ScrollToTop from "./components/ScrollToTop";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
-import { useEffect, useState } from "react";
 
 function App() {
   const [favoriteIds, setFavoriteIds] = useState(() => {
@@ -86,6 +87,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </ApiProvider>
   );
 }
