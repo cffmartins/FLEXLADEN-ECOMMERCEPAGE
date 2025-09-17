@@ -2,12 +2,15 @@
 @use "../colors/colors" as *;
 @import "../button/button.scss";
 
-// Container for the entire page
 .product-area {
   flex: 1;
   padding: 20px 20px;
   background: $background-color;
   overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     font-family: "Satoshi", Arial, sans-serif;
@@ -33,7 +36,9 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  width: 90%;
+  width: auto; // deixa a largura automática
+  max-width: 1200px; // limite máximo para não ficar muito largo
+  margin: 0 auto; // centraliza bloco horizontalmente
   overflow-x: auto;
   overflow-y: hidden;
   padding: 0 10px;

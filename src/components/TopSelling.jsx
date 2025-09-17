@@ -1,3 +1,4 @@
+// importing react and necessary hooks
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 // importing the ApiContext to access the fetched data
@@ -14,7 +15,7 @@ const TopSelling = ({ favoriteIds, toggleFavorite }) => {
   const { data, loading } = useContext(ApiContext);
   const navigate = useNavigate();
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Sorry, I sleepy</p>;
 
   // show 4 products from the fetched data
   const productsToShow = data.slice(4, 8);

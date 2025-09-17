@@ -29,7 +29,7 @@
 .NavBarLeft a {
   font-family: "Satoshi", Arial, sans-serif;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.6588235294);
+  color: #000000;
   text-decoration: none;
   font-size: 1rem;
   padding: 6px 18px;
@@ -72,7 +72,7 @@
   font-size: 1rem;
   font-family: "Satoshi", Arial, sans-serif;
   background: #fff;
-  color: rgba(0, 0, 0, 0.6588235294);
+  color: #000000;
   outline: none;
   transition: all 0.2s;
 }
@@ -99,12 +99,19 @@
   align-items: center;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
-  color: rgba(0, 0, 0, 0.6588235294);
+  color: #000000;
   background: none;
 }
-.NavBarRight a:hover {
+.NavBarRight a:hover, .NavBarRight a.active, .NavBarRight a.open {
   background: #ff6600;
-  color: #fff;
+  color: #ffffff;
+}
+.NavBarRight a:hover svg,
+.NavBarRight a:hover svg *, .NavBarRight a.active svg,
+.NavBarRight a.active svg *, .NavBarRight a.open svg,
+.NavBarRight a.open svg * {
+  fill: none !important;
+  stroke: #ffffff !important;
 }
 
 .NavBarRighticon,
@@ -120,7 +127,7 @@
 
 .active-link {
   background: #ff6600 !important;
-  color: #fff !important;
+  color: #ffffff !important;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
 }

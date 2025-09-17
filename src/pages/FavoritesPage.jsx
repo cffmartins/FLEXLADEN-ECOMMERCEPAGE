@@ -1,6 +1,8 @@
-// importing necessary libraries and components
+// importing react
 import React, { useEffect, useState } from "react";
+// importing components
 import ProductCard from "../components/ProductCard";
+// importing styles
 import "../styles/favoritespage/favoritespage.scss";
 
 function FavoritesPage({ favoriteIds, toggleFavorite }) {
@@ -37,6 +39,7 @@ function FavoritesPage({ favoriteIds, toggleFavorite }) {
                 variant="simple"
                 favoriteIds={favoriteIds}
                 toggleFavorite={toggleFavorite}
+                enableNavigation={true}
               />
             </div>
           ))}

@@ -20,40 +20,54 @@
   cursor: not-allowed;
 }
 
-.topselling-container {
+.product-area {
+  flex: 1;
+  padding: 20px 20px;
+  background: #ffffff;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  background: #ffffff;
-  gap: 24px;
-  width: 100%;
 }
-.topselling-container h1 {
+.product-area__title {
   font-family: "Satoshi", Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.7rem;
   color: #009975;
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-family: "Satoshi", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .grid-4-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  width: 90%;
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 0 10px;
 }
 
+.product-card-wrapper {
+  flex: 0 0 calc(25% - 15px);
+  min-width: 150px;
+}
 .product-card-wrapper h3 {
   font-family: "Satoshi", Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: normal;
-  font-style: normal;
   color: #000000;
 }
 .product-card-wrapper p {
@@ -69,39 +83,27 @@
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px;
   background-color: #f0eeed;
-  flex: 0 0 calc(25% - 15px);
-  min-width: 150px;
+  min-width: unset;
 }
 
 @media (max-width: 700px) {
-  .topselling-container {
-    width: 90%;
-    padding: 20px 10px;
-    gap: 16px;
-  }
-  .topselling-container h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0 10px;
+  .product-area {
+    width: 100vw;
+    padding: 18px 6px;
   }
   .grid-4-row {
-    display: flex;
-    flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    align-items: flex-start;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;
   }
   .product-card-wrapper {
     flex: 0 0 48%;
     min-width: unset;
   }
   .product-card-wrapper img {
-    flex: unset;
     min-width: 100%;
     border-radius: 6px;
   }
@@ -116,4 +118,4 @@
     text-align: center;
     margin: 0 0 12px;
   }
-}/*# sourceMappingURL=topselling.css.map */
+}/*# sourceMappingURL=favoritespage.css.map */

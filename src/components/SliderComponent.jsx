@@ -1,3 +1,4 @@
+// importing react and necessary hooks
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 // importing the react-slick library for the slider functionality
@@ -10,6 +11,7 @@ import ProductCard from "./ProductCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/slider/slider.scss";
+// importing button
 import Button from "./Button";
 
 const SliderComponent = () => {
@@ -18,9 +20,9 @@ const SliderComponent = () => {
   // calling the useNavigate hook at the top, before the conditional return
   const navigate = useNavigate();
 
-  if (loading) return <p>Loading</p>;
+  if (loading) return <p>Sorry, I sleepy</p>;
 
-  // Function for the button to redirect to the category page
+  // function for the button to redirect to the category page
   const handleButtonClick = () => {
     navigate("/categorypage"); // route path to the category page
   };
@@ -62,7 +64,7 @@ const SliderComponent = () => {
         <Slider {...settings}>
           {productsToShow.map((product) => (
             <div key={product.id} className="slide">
-              <ProductCard product={product} />
+              <ProductCard product={product} onlyImage={true} />
             </div>
           ))}
         </Slider>

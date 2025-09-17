@@ -109,9 +109,18 @@
   transition: background 0.2s, color 0.2s;
   color: $text-color;
   background: none;
-  &:hover {
+
+  &:hover,
+  &.active,
+  &.open {
     background: $primary-color;
-    color: #fff;
+    color: #ffffff;
+
+    svg,
+    svg * {
+      fill: none !important;
+      stroke: #ffffff !important;
+    }
   }
 }
 
@@ -128,7 +137,7 @@
 //active link (GLOBAL)
 .active-link {
   background: $primary-color !important;
-  color: #fff !important;
+  color: #ffffff !important;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
 }
