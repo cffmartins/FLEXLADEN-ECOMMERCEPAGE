@@ -4,7 +4,7 @@ import Button from "../components/Button";
 // icon for delete action
 import { MdDelete } from "react-icons/md";
 //importing styles
-import "../styles/cartpage/CartPage.scss";
+import "../styles/cartpage/cartpage.scss";
 
 function CartPage() {
   const [cartItems, setCartItems] = useState([]);
