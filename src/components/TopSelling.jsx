@@ -15,7 +15,7 @@ const TopSelling = ({ favoriteIds, toggleFavorite }) => {
   const { data, loading } = useContext(ApiContext);
   const navigate = useNavigate();
 
-  if (loading) return <p>Sorry, I sleepy</p>;
+  if (loading) return <p>Sorry, I'm sleepy</p>;
 
   // show 4 products from the fetched data
   const productsToShow = data.slice(4, 8);
