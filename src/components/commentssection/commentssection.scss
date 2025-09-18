@@ -1,0 +1,135 @@
+// importing color
+@use "../../styles/colors/colors" as *;
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem auto;
+
+  h2 {
+    font-family: "Satoshi", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+  }
+
+  .comments-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 1100px;
+    height: 100px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .comment {
+    border: 1px solid $background-card;
+    border-radius: 8px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    // using icons to represent user, stars and likes
+
+    .comment-user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.25rem;
+
+      .user-icon {
+        margin-right: 0.4rem;
+        color: $secondary-color;
+        font-size: 1.1rem;
+      }
+      .username {
+        font-weight: bold;
+      }
+    }
+
+    .comment-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 0.4rem;
+
+      .star-icon {
+        color: gold;
+        font-size: 1rem;
+      }
+    }
+
+    .comment-body {
+      margin: 0.7rem 0;
+      font-style: italic;
+      quotes: '"' '"';
+    }
+
+    .comment-likes {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+
+      .heart-icon {
+        color: $primary-color;
+        font-size: 1.1rem;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// responsive to mobile
+@media (max-width: 700px) {
+  .comments-section {
+    margin-bottom: 2rem auto;
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .comments-list {
+      grid-template-columns: 1fr; // uma coluna só
+      width: 90%;
+      height: auto;
+    }
+
+    .comment {
+      padding: 1rem;
+
+      .comment-user {
+        .user-icon {
+          font-size: 1rem;
+          margin-right: 0.3rem;
+        }
+        .username {
+          font-size: 1rem;
+        }
+      }
+
+      .comment-stars {
+        .star-icon {
+          font-size: 0.9rem;
+        }
+      }
+
+      .comment-body {
+        font-size: 0.9rem;
+      }
+
+      .comment-likes {
+        .heart-icon {
+          font-size: 1rem;
+        }
+        strong {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

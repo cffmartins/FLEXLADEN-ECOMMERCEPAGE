@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 import ApiProvider from "./context/ApiProvider";
 // import components and pages
 import ScrollToTop from "./components/ScrollToTop";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "./components/navbar/NavBar";
+import Footer from "./components/footer/Footer";
 import HomePage from "./pages/HomePage";
-import FavoritesPage from "./pages/FavoritesPage";
-import CategoryPage from "./pages/CategoryPage";
-import ProductPage from "./pages/ProductPage";
-import CartPage from "./pages/CartPage";
-import ProfilePage from "./pages/ProfilePage";
+import FavoritesPage from "./pages/favoritespage/FavoritesPage";
+import CategoryPage from "./pages/categorypage/CategoryPage";
+import ProductPage from "./pages/productpage/ProductPage";
+import CartPage from "./pages/cartpage/CartPage";
+import ProfilePage from "./pages/profilepage/ProfilePage";
 
 function App() {
   const [favoriteIds, setFavoriteIds] = useState(() => {
