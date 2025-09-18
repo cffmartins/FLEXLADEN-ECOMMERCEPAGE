@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 
 import App from "./App";
 
-import "../src/styles/main.css";
+import "../src/styles/main.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

@@ -1,6 +1,6 @@
-@use "./slider/slider";
-@use "./button/button";
-@use "../colors/colors" as *;
+@use "../components/slider/slider";
+@use "../components/button/button";
+@use "./colors/colors" as *;
 
 @font-face {
   font-family: "Satoshi";
@@ -62,8 +62,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@import "colors";
-@import "navbar";
 
 body {
   background-color: $background-color;
