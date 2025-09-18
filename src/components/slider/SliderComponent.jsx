@@ -6,7 +6,7 @@ import Slider from "react-slick";
 // importing the ApiContext to access the fetched data
 import ApiContext from "../../context/ApiContext";
 // importing the ProductCard component to display each product in the slider
-import ProductCard from "../ProductCard/ProductCard.jsx";
+import ProductCard from "../productcard/ProductCard.jsx";
 // importing styles for the slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
