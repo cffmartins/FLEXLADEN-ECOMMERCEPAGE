@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 // importing the ApiContext to access the fetched data
 import ApiContext from "../../context/ApiContext";
 // importing the ProductCard component
-import ProductCard from "../ProductCard/ProductCard.jsx";
+import ProductCard from "../productcard/ProductCard.jsx";
 
 // importing styles
 import "./topselling.scss";
