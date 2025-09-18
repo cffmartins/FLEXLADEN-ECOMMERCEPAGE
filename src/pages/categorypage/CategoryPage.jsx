@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "../../components/ProductCard/ProductCard.jsx";
+import ProductCard from "../../components/productcard/ProductCard.jsx";
 import Button from "../../components/button/Button.jsx";
 import "./categorypage.scss";
 
